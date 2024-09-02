@@ -1,0 +1,117 @@
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  text-align: center;
+  background: #1626ff;
+  background: linear-gradient(to top, #1626ff 0%, #ffffff 100%);
+
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.control {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  margin: 0 10px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+span {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+/* Timer section */
+#timer {
+  margin-top: 30px;
+}
+
+#timer-label {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+#time-left {
+  font-size: 3rem;
+  margin: 20px 0;
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: #007bff;
+}
+
+#start_stop,
+#reset {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Remove unnecessary element */
+audio {
+  display: none;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .app {
+    padding: 20px;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .control {
+    margin: 10px 0;
+  }
+}
